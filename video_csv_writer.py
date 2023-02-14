@@ -6,19 +6,15 @@ from video import Video
 from bs4 import BeautifulSoup
 
 
-def extract_root_url(url: str) -> str:
-    return url.split('.com')[0] + '.com'
-
-
 class VideoCsvWriter:
 
 
-    def __init__(self, csv_dir, html_cache_dir, cookies, url: str, filename, missing_urls_filename) -> None:
+    def __init__(self, csv_dir, html_cache_dir, cookies, root_url, url, filename, missing_urls_filename) -> None:
         self.__csv_dir = csv_dir
         self.__html_cache_dir = html_cache_dir
         self.__cookies = cookies
         self.__url = url
-        self.__root_url = extract_root_url(url)
+        self.__root_url = root_url
         self.__visited_urls = []
         self.__videos = []
         self.__filename = filename

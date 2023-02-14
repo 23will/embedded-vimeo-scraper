@@ -1,5 +1,5 @@
 import pycookiecheat
-from video_url_grabber import VideoCsvWriter, extract_root_url
+from video_csv_writer import VideoCsvWriter
 from video_downloader import VideoDownloader
 
 
