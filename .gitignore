@@ -1,7 +1,5 @@
 # For this project
-csv/
-videos/
-html_cache/
+log.txt
 .DS_Store
 
 # Byte-compiled / optimized / DLL files
