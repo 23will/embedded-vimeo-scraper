@@ -35,8 +35,6 @@ class VideoCsvWriter:
                     videos.update(inner_videos)
                 links = html_parser.find_urls()
                 logging.debug(f'Found {len(links)} links for {url} with parent {parent_url}')
-                if url == '''https://damomitchell.com/course/online-nei-gong/''':
-                    logging.debug(f'TEST {str(links)} videos for {url}')
                 for link in links:
                     if link not in visited:
                         visited.add(link)
