@@ -22,7 +22,7 @@ class Videofinder:
         logging.info(f'Getting HTML for {url}')
         html = self.html_cache.get_html(url)
         videos = []
-        exception_url_parts = ['545416988', '444964025']
+        exception_url_parts = ['duplicate1', 'duplicate2']
         if html is not None:
             html_parser = HtmlParser(self.excluded_urls, domain, html)
             video_url_and_titles = html_parser.find_video_urls_and_titles()

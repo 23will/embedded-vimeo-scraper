@@ -15,7 +15,6 @@ class HtmlParser:
         for a_tag in a_tags:
             href = a_tag.get('href')
             if href is not None and href not in visited_urls and not list(filter(lambda x: x in href, self.__excluded_urls)) and href.startswith(self.__url):
-                print('HREF: ' + href)
                 hrefs.append(href)
         return hrefs
 
