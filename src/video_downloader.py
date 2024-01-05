@@ -5,7 +5,6 @@ from dataclasses import dataclass
 
 from vimeo_downloader import Vimeo
 from vimeo_local_downloader import EmbeddedVimeo
-# from src.vimeo_downloader2 import Vimeo2
 
 from file_utils import FileUtils
 from video import Video
