@@ -11,6 +11,7 @@ CSV_FILEPATH = os.path.join(CSV_DIR, CSV_FILENAME)
 URL_EXCLUDE_LIST = [
     'membership'
     'subscribe',
+    'subscription',
     'faq',
     'account',
     'orders',
