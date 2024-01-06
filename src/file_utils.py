@@ -2,8 +2,6 @@ import os
 
 
 class FileUtils:
-
-
     @staticmethod
     def create_dir_if_not_exists(*args):
         output_path = os.path.join(*args)

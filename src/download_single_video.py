@@ -7,7 +7,9 @@ import settings
 parser = argparse.ArgumentParser(description="Vimeo downloader")
 parser.add_argument("--embedded_url", type=str, help="The vimeo url")
 parser.add_argument("--url", type=str, help="The url of the page that the video is on")
-parser.add_argument("--title", type=str, help="Essentially the filename minus the extension")
+parser.add_argument(
+    "--title", type=str, help="Essentially the filename minus the extension"
+)
 
 args = parser.parse_args()
 
