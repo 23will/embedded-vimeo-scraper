@@ -5,19 +5,15 @@ import pycookiecheat
 
 
 class UrlUtils:
-
-
     @staticmethod
     def remove_path(url):
         parsed_url = urlparse(url)
-        return f'{parsed_url.scheme}://{parsed_url.netloc}'
-
+        return f"{parsed_url.scheme}://{parsed_url.netloc}"
 
     @staticmethod
     def get_path(url):
         parsed_url = urlparse(url)
         return parsed_url.path
-
 
     @staticmethod
     def get_cookies(url):
